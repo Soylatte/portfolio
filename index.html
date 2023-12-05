@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soyeon Kim</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaqueries.css">
+    <script src="https://kit.fontawesome.com/a999561bab.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Soyeon Kim</div>
+        <div>
+            <ul class="nav-links">
+             <li><a href="#about">About</a></li>
+             <li><a href="#skills">Skills</a></li>
+             <li><a href="#projects">Projects</a></li>
+             <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Soyeon Kim</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+             <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+             <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+             <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./assets/profile-photo.1.jpg" alt="soyeon profile-photo" />
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Soyeon Kim</h1>
+            <p class="section__text__p2">Front-end Developer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./assets/SoyeonKimCV.pdf')">
+                Download CV</button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info</button>
+            </div>
+            <div id="socials-container">
+                <img src="./assets/linkedin.png" alt="My Linkedin profile"
+                class="icon" onclick="location.href='https://www.linkedin.com/in/soyeon-kim-4aa971209/'" />
+                <img src="./assets/github.png" alt="My Github profile"
+                class="icon" onclick="location.href='https://github.com/Soylatte'" />
+
+
+            </div>
+        </div>
+    </section>
+    <section id="about">
+        <p class="section__text__p1">Get To Know More</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./assets/Soyeon-in-korea.jpg" alt="profile photo"
+                class="about-pic" />
+            </div>
+            <div class="about-details-container">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./assets/experience.png" alt="experience icon"
+                        class="icon" />
+                        <h3>Experience</h3>
+                        <p>Entry Level</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./assets/education.png" alt="education icon"
+                        class="icon" />
+                        <h3>Education</h3>
+                        <p>Bachelor of International Trade</p>
+                    </div>
+                    </div>
+                    <div class="text-container">
+                        <p> Background in International trade and business administration.
+                            Enthusiastic and Self-taught Front-end developer with a passion for creating dynamic and responsive web applications.
+                            Eager to contribute my skills, learn from experienced developers, and help build innovative web solutions. A
+                            team player with strong communication and problem-solving skills</p>
+                </div>
+            </div>
+        </div>
+        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow"
+        onclick="location.href='./#skills'"/>
+    </section>
+    <section id="skills">
+        <p class="section__text__p1">
+            Explor My
+        </p>
+        <h1 class="title">Skills</h1>
+        <div class="experience-details-container">
+            <div class="about-containers">
+                <div class="details-containers">
+                    <div class="article-container">
+                        <article>
+                            <div class="fa-brands fa-html5" style="color: #f8bae1;">
+                            </div>
+                            <i class="fa-brands fa-js" style="color: #f8bae1;"></i>
+                            <i class="fa-brands fa-css3-alt" style="color: #f8bae1;"></i>
+                            <i class="fa-brands fa-react" style="color: #f8bae1;"></i>
+                            <i class="fa-brands fa-node" style="color: #f8bae1;"></i>
+                            <i class="fa-brands fa-bootstrap" style="color: #f8bae1;"></i>
+                            <img src="./assets/icons8-typescript-48.png" alt="typescript" class="icon typescript" />
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
