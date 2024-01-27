@@ -1,5 +1,5 @@
 # portfolio
-Build modern simple porfolio
+Build modern simple porfolio by soyeon kim
 # https://soyeon.netlify.app/
 
 # Stacks
